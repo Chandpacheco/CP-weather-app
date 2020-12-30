@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #84a9ac;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 28px;
+  color: #3b6978;
+  margin: 0 0 5px;
+  text-transform: capitalize;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  color: #3b6978;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.25;
+  list-style: none;
+}
+.weather-app {
+  background: rgb(231, 223, 213, 0.5);
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.temp {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.weather-icon {
+  margin-right: 10px;
+}
+.units {
+  position: relative;
+  top: -34px;
+}
+.search-form {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+.dayone,
+.daytwo,
+.daythree,
+.dayfour,
+.dayfive {
+  text-align: center;
+}
+.feelsLike {
+  color: #3b6978;
+  font-size: 13.5px;
+  font-weight: 100;
+  line-height: 0.5;
+  position: relative;
+  top: -10px;
+}
+.Hi {
+  font-weight: bold;
+}
+.btn-group {
+  padding: 2px;
+}
+
+.fahr {
+  text-decoration: none;
+}
+
+.temp-description {
+  text-transform: capitalize;
+}

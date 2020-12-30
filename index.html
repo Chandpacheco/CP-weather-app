@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chan's Weather App Pt2</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0d15e10c49.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app shadow">
+        <form class="search-form" id="weather-search-form">
+          <div class="row">
+          <input type="search" 
+          placeholder="What's the weather like in..." 
+          class="form-control col-8 shadow-sm"
+          id = "search-city-input"
+          />
+    
+          <input type="submit" value="Search" class="form-control col-2 btn btn-success shadow-sm" id="search-button" />
+          <input type="submit" value="Current" class="form-control col-2 btn btn-primary shadow-sm" id="current-location-button" />
+          
+          </div>
+        </form>
+        <h1 class="location-element" id="location-name">Wonderland 🐇</h1>
+        <ul>
+          <li> <span id=date-time></span></li>
+          <li class ="temp-description" id="main-temp-description">Partly Cloudy</li>
+        </ul>
+        <div class="row">
+          <div class="col">
+            <div class="clearfix">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="partly cloudy"
+                class="weather-icon float-left"
+                id="main-weather-icon"
+              />
+              <div class="float-left">
+              <span class="temp" id="temp">72</span> 
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |<a href="#" id="fahrenheit-link"> °F</a></span>
+              <br />
+              <span class="feelsLike" id="feels-like-element">Feels like: 70° F
+            </div>
+</div>
+          </div>
+            <div class="col">
+              <ul>
+                <li class="Hi" id="hi-element">Hi: 75° </li>
+                <li class="Lo" id="lo-element">Lo: 65°</li>
+                <li><div class="btn-group btn-group-sm shadow-sm" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-outline-primary">Precipitation</button>
+  <button type="button" class="btn btn-outline-info">Wind</button>
+  <button type="button" class="btn btn-outline-secondary">Hi/Lo</button>
+</div> </li>
+              </ul>
+            </div>
+           
+            </div>
+            <div class="week">
+              <div class="row">
+                <div class="col"><ul class="dayone">
+                  <li>Monday</li>
+                  <li> 
+                    <img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" />
+                  </li>
+                  <li>temp</li>
+                </ul></div>
+                <div class="col"><ul class="daytwo">
+                  <li>Tuesday</li>
+                  <li>
+                    <img src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png" />
+                  </li>
+                  <li>temp</li>
+                </ul></div>
+                <div class="col"><ul class="daythree">
+                  <li>Wednesday</li>
+                  <li><img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" /></li>
+                  <li>temp</li>
+                </ul></div>
+                <div class="col"><ul class="dayfour">
+                  <li>Thursday</li>
+                  <li><img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" /></li>
+                  <li>temp</li>
+                </ul></div>
+                <div class="col"><ul class="dayfive">
+                  <li>Friday</li>
+                  <li>
+                    <img src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png" /></i></li>
+                  <li>temp</li>
+                </ul></div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
