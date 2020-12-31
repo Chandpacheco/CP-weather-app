@@ -24,11 +24,12 @@ li {
   line-height: 1.25;
   list-style: none;
 }
+
 .weather-app {
   background: rgb(231, 223, 213, 0.5);
   border: 1px solid #dadde1;
   padding: 15px;
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 600px;
   border-radius: 10px;
 }
@@ -79,4 +80,33 @@ li {
 
 .temp-description {
   text-transform: capitalize;
+}
+
+.signature {
+  padding: 3px;
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 13.5px;
+  color: #6c757d;
+}
+.portfolio {
+  text-decoration: none;
+  color: #6c757d;
+  transition: all 200ms ease;
+}
+
+.portfolio:hover {
+  color: #3b6978;
+  font-weight: bold;
+}
+
+.github {
+  text-decoration: underline;
+  color: #3b6978;
+  transition: all 200ms ease;
+}
+
+.github:hover {
+  color: #6c757d;
+  font-weight: bold;
 }
